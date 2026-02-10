@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=HPC Job Monitor
+Comment=Monitor HPC cluster jobs via ntfy.sh
+Exec=python3 hpc_tray.py --topic YOUR_TOPIC_HERE
+Icon=/icons/hpc-idle.svg
+Terminal=false
+Categories=Utility;System;
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
