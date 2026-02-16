@@ -1,12 +1,12 @@
 # HPC Job Tray Monitor
 
-A Ubuntu system tray app that gives you instant, color-coded desktop notifications when your HPC cluster jobs start, finish, or crash.
+A Ubuntu / Windows system tray app that gives you instant, color-coded desktop notifications when your HPC cluster jobs start, finish, or crash.
 
 ```
  HPC Cluster                     ntfy.sh                    Your Ubuntu Desktop
 ┌──────────────┐    curl POST   ┌──────────────┐   SSE     ┌─────────────────────┐
-│ SLURM Job    │ ─────────────► │  Free relay   │ ───────►  │ Tray icon changes:  │
-│              │                │  (pub/sub)    │           │  🔵 Job started     │
+│ SLURM Job    │ ─────────────► │  Free relay  │ ───────►  │ Tray icon changes:  │
+│              │                │  (pub/sub)   │           │  🔵 Job started     │
 │ hpc_notify() │                └──────────────┘           │  🟢 Job finished    │
 └──────────────┘                                           │  🔴 Job failed      │
                                                            │ + system notification│
